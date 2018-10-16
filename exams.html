@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Заглавие на документа -->
+    <title>Neo's room</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Google Fonts -->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> 
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    
+    <!-- jQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <!-- Странична лента -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Е-Студент<i class="fas fa-bars"></i></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">     
+                <li><a href="index.html">Начало <i class="fas fa-home"></i></a></li>
+                <li><a href="profile.html">Профил <i class="fas fa-user-alt"></i></a></li>
+                
+                <li><a href="messages.html">Съобщения<i class="fas fa-envelope"></i></a></li>
+                <li><a href="schedule.html">Програма<i class="fas fa-table"></i></a></li>
+                <li><a href="exams.html">Изпити<i class="fas fa-pen"></i></a></li>
+                <li><a href="resources.html">Ресурси<i class="fas fa-desktop"></i></a></li>
+                <li><a href="#">Изход<i class="fas fa-power-off"></i></a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <div id="page-content-wrapper">
+            <div class="page-content inset">
+                <!-- =========================================== -->
+                <!--          Главно съдържание на сайта         -->
+                <!-- =========================================== -->
+                <h3>График на изпитите</h3>
+                
+                <p>Няма налични данни</p>
+                <!-- =========================================== -->
+                <!--         Край на главното съдържание         -->
+                <!-- =========================================== -->
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("active");
+        });
+    </script>
+</body>
+</html>

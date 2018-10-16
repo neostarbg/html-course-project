@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Заглавие на документа -->
+    <title>Neo's room</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Google Fonts -->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> 
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    
+    <!-- jQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <!-- Странична лента -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Е-Студент<i class="fas fa-bars"></i></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">     
+                <li><a href="index.html">Начало <i class="fas fa-home"></i></a></li>
+                <li><a href="profile.html">Профил <i class="fas fa-user-alt"></i></a></li>
+                
+                <li><a href="messages.html">Съобщения<i class="fas fa-envelope"></i></a></li>
+                <li><a href="schedule.html">Програма<i class="fas fa-table"></i></a></li>
+                <li><a href="exams.html">Изпити<i class="fas fa-pen"></i></a></li>
+                <li><a href="resources.html">Ресурси<i class="fas fa-desktop"></i></a></li>
+                <li><a href="#">Изход<i class="fas fa-power-off"></i></a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <div id="page-content-wrapper">
+            <div class="page-content inset">
+                <!-- =========================================== -->
+                <!--          Главно съдържание на сайта         -->
+                <!-- =========================================== -->
+                
+                <h3>Програма</h3>
+                
+                Лаб група:
+                <select name="group" id="group-selector">
+                    <option value="0">Всички</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" selected="selected">4</option>
+                </select>
+                <table cellspacing="0" cellpadding="4" border="0" class="table table-striped table-bordered">
+                    <tr>
+                        <th scope="col">Ден</th><th scope="col">Час</th><th scope="col">Седмица</th><th scope="col">Група</th><th scope="col">Зала</th><th scope="col">Сграда</th><th scope="col">Л/У</th><th scope="col">Дисциплина</th><th scope="col">Преподавател</th>
+                    </tr><tr>
+                        <td>Понеделник</td><td>8.15-10.00</td><td>всяка</td><td>2 сем</td><td>202</td><td>Корпус 3</td><td>У</td><td>Математически анализ І част</td><td>ас. Виктория Герасимова Бенчева</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>10.15-12.00</td><td>всяка</td><td>1 сем</td><td>202</td><td>Корпус 3</td><td>У</td><td>Дискретни структури</td><td>гл.ас. д-р Мария Стефанова Джумалиева - Стоева</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>12.15-14.00</td><td>всяка</td><td>2 сем</td><td>202</td><td>Корпус 3</td><td>У</td><td>Дискретни структури</td><td>гл.ас. д-р Мария Стефанова Джумалиева - Стоева</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>14.15-16.00</td><td>1,3</td><td>1 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td>гл.ас. д-р Милена Емилова Стефанова</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>14.15-16.00</td><td>2,4</td><td>1 сем</td><td>406</td><td>Корпус 3</td><td>У</td><td>Дискретни структури</td><td>гл.ас. д-р Мария Стефанова Джумалиева - Стоева</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>14.15-16.00</td><td>1,3</td><td>2 лаб</td><td>402</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td></td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>14.15-16.00</td><td>всяка</td><td>3 лаб</td><td>704</td><td>Корпус 3</td><td>У</td><td>Програмиране на Java</td><td>ас. Мая Радославова Христова</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>14.15-16.00</td><td>2,4</td><td>4 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td>гл.ас. д-р Милена Емилова Стефанова</td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>16.15-18.00</td><td>всяка</td><td>2 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td></td>
+                    </tr><tr>
+                        <td>Понеделник</td><td>16.15-18.00</td><td>всяка</td><td>4 лаб</td><td>704</td><td>Корпус 3</td><td>У</td><td>Програмиране на Java</td><td>ас. Мая Радославова Христова</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>10.15-12.00</td><td>1,3</td><td></td><td>102</td><td>Корпус 3</td><td>Л</td><td>Изграждане на приложни програмни интерфейси (API)</td><td>доц. д-р Златко Георгиев Върбанов</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>10.15-12.00</td><td>2,4</td><td></td><td>202</td><td>Корпус 3</td><td>Л</td><td>Дискретни структури</td><td>доц. д-р Валентин Пенев Бакоев</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>12.15-14.00</td><td>всяка</td><td></td><td>202</td><td>Корпус 3</td><td>Л</td><td>Дискретни структури</td><td>доц. д-р Валентин Пенев Бакоев</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>14.15-16.00</td><td>всяка</td><td>3 лаб</td><td>503</td><td>Корпус 3</td><td>У</td><td>PHP базирани работни рамки</td><td>Юри Стефанов Стойнов</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>14.15-16.00</td><td>всяка</td><td>4 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td>гл.ас. д-р Милена Емилова Стефанова</td>
+                    </tr><tr>
+                        <td>Вторник</td><td>16.15-18.00</td><td>всяка</td><td>4 лаб</td><td>503</td><td>Корпус 3</td><td>У</td><td>PHP базирани работни рамки</td><td>Юри Стефанов Стойнов</td>
+                    </tr><tr>
+                        <td>Сряда</td><td>8.15-10.00</td><td>2,4</td><td></td><td>306</td><td>Корпус 3</td><td>Л</td><td>PHP базирани работни рамки</td><td>доц. д-р Тодор Йорданов Тодоров</td>
+                    </tr><tr>
+                        <td>Сряда</td><td>8.15-10.00</td><td>1,3</td><td></td><td>306</td><td>Корпус 3</td><td>Л</td><td>Програмиране на Java</td><td>доц. д-р Тодор Йорданов Тодоров</td>
+                    </tr><tr>
+                        <td>Сряда</td><td>10.15-12.00</td><td>всяка</td><td>1 АЕ</td><td>707</td><td>Корпус 3</td><td>У</td><td>Специализиран английски език</td><td>преп. Анелия Александрова Иванова</td>
+                    </tr><tr>
+                        <td>Сряда</td><td>10.15-12.00</td><td>всяка</td><td>3 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td></td>
+                    </tr><tr>
+                        <td>Сряда</td><td>12.15-14.00</td><td>всяка</td><td>2 АЕ</td><td>707</td><td>Корпус 3</td><td>У</td><td>Специализиран английски език</td><td>преп. Анелия Александрова Иванова</td>
+                    </tr><tr>
+                        <td>Сряда</td><td>12.15-14.00</td><td>2,4</td><td>3 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td></td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>8.15-10.00</td><td>всяка</td><td>1 лаб</td><td>503</td><td>Корпус 3</td><td>У</td><td>Програмиране на Java</td><td>доц. д-р Тодор Йорданов Тодоров</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>10.15-12.00</td><td>всяка</td><td>1 сем</td><td>202</td><td>Корпус 3</td><td>У</td><td>Математически анализ І част</td><td>ас. Виктория Герасимова Бенчева</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>10.15-12.00</td><td>всяка</td><td>2 лаб</td><td>503</td><td>Корпус 3</td><td>У</td><td>Програмиране на Java</td><td>доц. д-р Тодор Йорданов Тодоров</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>10.15-12.00</td><td>всяка</td><td>3 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Системи за управление на съдържанието</td><td>гл.ас. д-р Силвия Ангелова Върбанова</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>12.15-14.00</td><td>всяка</td><td>1 лаб</td><td>503</td><td>Корпус 3</td><td>У</td><td>Изграждане на приложни програмни интерфейси (API)</td><td>гл.ас. д-р Милена Емилова Стефанова</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>12.15-14.00</td><td>всяка</td><td>2 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Системи за управление на съдържанието</td><td>гл.ас. д-р Силвия Ангелова Върбанова</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>14.15-16.00</td><td>всяка</td><td>1 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Системи за управление на съдържанието</td><td>гл.ас. д-р Силвия Ангелова Върбанова</td>
+                    </tr><tr>
+                        <td>Четвъртък</td><td>16.15-18.00</td><td>всяка</td><td>4 лаб</td><td>703</td><td>Корпус 3</td><td>У</td><td>Системи за управление на съдържанието</td><td>гл.ас. д-р Силвия Ангелова Върбанова</td>
+                    </tr><tr>
+                        <td>Петък</td><td>8.15-10.00</td><td>всяка</td><td>1</td><td>2</td><td>Спортна зала</td><td>У</td><td>Физическо възпитание</td><td>гл.ас. д-р Милен Стефанов Видиновски</td>
+                    </tr><tr>
+                        <td>Петък</td><td>8.15-10.00</td><td>всяка</td><td>2</td><td>2</td><td>Спортна зала</td><td>У</td><td>Физическо възпитание</td><td>гл.ас. д-р Димитър Николов Николов</td>
+                    </tr><tr>
+                        <td>Петък</td><td>12.15-14.00</td><td>1,3</td><td></td><td>202</td><td>Корпус 3</td><td>Л</td><td>Математически анализ І част</td><td>проф. д-р Милко Дамянов Такев</td>
+                    </tr><tr>
+                        <td>Петък</td><td>12.15-14.00</td><td>2,4</td><td>2 сем</td><td>202</td><td>Корпус 3</td><td>У</td><td>Дискретни структури</td><td>гл.ас. д-р Мария Стефанова Джумалиева - Стоева</td>
+                    </tr><tr>
+                        <td>Петък</td><td>14.15-16.00</td><td>1,3</td><td></td><td>202</td><td>Корпус 3</td><td>Л</td><td>Математически анализ І част</td><td>проф. д-р Милко Дамянов Такев</td>
+                    </tr><tr>
+                        <td>Петък</td><td>14.15-16.00</td><td>2,4</td><td></td><td>406</td><td>Корпус 3</td><td>Л</td><td>Системи за управление на съдържанието</td><td>доц. д-р Юлиана Стоянова Дошкова-Тодорова</td>
+                    </tr><tr>
+                        <td>Събота</td><td>10.15-12.00</td><td>всяка</td><td>1 лаб</td><td>402</td><td>Корпус 3</td><td>У</td><td>PHP базирани работни рамки</td><td>Любомир Георгиев Филипов</td>
+                    </tr><tr>
+                        <td>Събота</td><td>12.15-14.00</td><td>всяка</td><td>2 лаб</td><td>402</td><td>Корпус 3</td><td>У</td><td>PHP базирани работни рамки</td><td>Любомир Георгиев Филипов</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("active");
+            });
+        </script>
+        <script>
+            let labGroup = 4;
+            
+            $(document).ready(()=>{
+                filter(labGroup);
+            });
+            
+            $('#group-selector').change(() => {
+                console.log("works " + $('#group-selector').val());
+                filter($('#group-selector').val());
+            });
+            
+            function filter(labGroup) {
+                labGroup = parseInt(labGroup);
+                let semGroup = Math.ceil(labGroup/2); // 1/2 = 0.5 = 1 | 2/2 = 1 = 1 | 3/2 = 1.5 = 2 | 4/2 = 2 = 2
+                if(!(labGroup === 0)){
+                    $('tr:not(:first)').hide();
+                    
+                    $(`tr:contains('${labGroup} лаб')`).show();
+                    $(`tr:contains('${semGroup} сем')`).show();
+                    $(`tr:contains('${semGroup} АЕ')`).show();
+                    $(`td:nth-child(4):empty`).parent().show();
+                    
+                    let days = ['Неледя', 'Понеделник', 'Вторник', 'Сряда', 'Четвъртък', 'Петък', 'Събота'];
+                    let dayOfWeek = new Date().getDay();
+                    
+                    $(`tr:contains('${days[dayOfWeek]}')`).css('background-color', '#A7C6D6');
+                } else {
+                    $('tr').show();
+                }
+            }
+        </script>
+    </body>
+    </html>

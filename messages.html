@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Заглавие на документа -->
+    <title>Neo's room</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!-- Google Fonts -->   
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> 
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    
+    <!-- jQuery, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        
+        <!-- Странична лента -->
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#">Е-Студент<i class="fas fa-bars"></i></a></li>
+            </ul>
+            <ul class="sidebar-nav" id="sidebar">     
+                <li><a href="index.html">Начало <i class="fas fa-home"></i></a></li>
+                <li><a href="profile.html">Профил <i class="fas fa-user-alt"></i></a></li>
+                
+                <li><a href="messages.html">Съобщения<i class="fas fa-envelope"></i></a></li>
+                <li><a href="schedule.html">Програма<i class="fas fa-table"></i></a></li>
+                <li><a href="exams.html">Изпити<i class="fas fa-pen"></i></a></li>
+                <li><a href="resources.html">Ресурси<i class="fas fa-desktop"></i></a></li>
+                <li><a href="#">Изход<i class="fas fa-power-off"></i></a></li>
+                
+            </ul>
+        </div>
+        
+        
+        <div id="page-content-wrapper">
+            <h3>Съобщения</h3>
+            <!-- =========================================== -->
+            <!--          Главно съдържание на сайта         -->
+            <!-- =========================================== -->
+            <div class="messagebox">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'inbox')"><i class="fas fa-arrow-alt-circle-left"></i>Получени</button>
+                    <button class="tablinks" onclick="openTab(event, 'sent')"><i class="fas fa-arrow-alt-circle-right"></i>Изпратени</button>
+                </div>
+                <div id="inbox" class="tabcontent default">
+                    <table id="inbox" class="table table-striped table-bordered">
+                        <thead>
+                            <th>От</th>
+                            <th>Тема</th>
+                            <th>Съобщение</th>
+                            <th>Дата</th>
+                            <th>Действия</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Йонислав Скобов 20072</td>
+                                <td>Lorem ipsum</td>
+                                <td>dolor sit amet Aenean nec placerat massa. Etiam interdum odio...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Иван 20083</td>
+                                <td>Lorem ipsum</td>
+                                <td>dolor sit amet Aenean nec placerat massa. Etiam interdum odio...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Драган Петканов 20092</td>
+                                <td>Lorem ipsum</td>
+                                <td>dolor sit amet Aenean nec placerat massa. Etiam interdum odio...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Мирослав Иванов 20072</td>
+                                <td>Lorem ipsum</td>
+                                <td>dolor sit amet Aenean nec placerat massa. Etiam interdum odio...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div id="sent" class="tabcontent">
+                    <table id="inbox" class="table table-striped table-bordered">
+                        <thead>
+                            <th>До</th>
+                            <th>Тема</th>
+                            <th>Съобщение</th>
+                            <th>Дата</th>
+                            <th>Действия</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>не знам</td>
+                                <td>адслкйадсй</td>
+                                <td>Това е някакво примерно съобщение съобщение колкото да има нещ...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Иван Драганов 20023</td>
+                                <td>Lorem ipsum</td>
+                                <td>dolor sit amet Aenean nec placerat massa. Etiam interdum odio...</td>
+                                <td>16/10/2018 5:24pm</td>
+                                <td><a href="#"><i class="fas fa-reply"></i></a><a href="#"><i class="fas fa-trash-alt"></i><a href="#"><i class="fas fa-archive"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            
+            <!-- =========================================== -->
+            <!--         Край на главното съдържание         -->
+            <!-- =========================================== -->
+        </div>
+    </div>
+</div>
+
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+</script>
+
+<script>
+    
+    $('document').ready(()=> {
+        $('.tabcontent').hide();
+        $('.default').show();
+    });
+    
+    function openTab(event, id) {
+        $('.tabcontent').hide();
+        $(`#${id}`).show();
+    }
+</script>
+</body>
+</html>
